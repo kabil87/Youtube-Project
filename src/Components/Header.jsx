@@ -58,7 +58,7 @@ const Header = () => {
             <Search size={20} />
           </div>
 
-          <div className=''>
+          <div> 
 
             <div className='  w-98'>
               <input onChange={(e) => setInputValue(e.target.value)} className='ml-2 mt-1 outline-none w-[30rem]' placeholder='Search'></input>
