@@ -1,5 +1,5 @@
 import { Link, useSearchParams } from "react-router-dom";
-import CommendsContainer from "./CommendsContainer";
+import CommendsContainer from "./CommentsContainer";
 import { useEffect, useState } from "react";
 import { YOUTUBE_KEY, YOUTUBE_URL } from "../Utilities/Constants";
 import WatcVideCrad from "./WatcVideCrad";
