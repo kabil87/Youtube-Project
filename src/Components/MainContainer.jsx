@@ -4,14 +4,18 @@ import VideoContainer from './VideoContainer'
 
 const MainContainer = () => {
   return (
-    <div className='ml-37'>
+    <div className="bg-[#0F0F0F] min-h-screen 
+                    ml-0 md:ml-32 px-2 md:px-6">
 
-      <div className=''>
+      {/* Buttons Section */}
+      <div className="mt-4 md:w-full md:mt-6">
         <Buttons />
       </div>
-      
-      <VideoContainer />
 
+      {/* Videos Section */}
+      <div className="mt-2 md:mt-4">
+        <VideoContainer />
+      </div>
     </div>
   )
 }

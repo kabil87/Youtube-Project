@@ -6,8 +6,8 @@ const Button = ({value}) => {
 
   return (
 
-    <div>
-      <button className="bg-gray-300 px-2 rounded-sm">{value}</button>
+    <div className="">
+      <button className="bg-[#272727] text-white px-2 rounded-sm">{value}</button>
     </div>
   )
 }

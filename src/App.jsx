@@ -4,6 +4,8 @@ import {Provider} from 'react-redux'
 import store from "./Utilities/Store";
 import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from "react-router-dom"
 import  Watch from './Components/Watch' 
+import Search from "./Components/Search";
+import Shimmer from "./Utilities/Shimmer";
 const App = () => {
 
   
@@ -22,7 +24,7 @@ const App = () => {
 
   return (
 
-    <div>
+    <div className="">
       <Provider store={store}>
 
       
@@ -35,6 +37,8 @@ const App = () => {
 
       <Route path="/" element={<Body />} />
       <Route path={"/watch"} element={<Watch />} />
+      <Route path={"/search"} element={<Search />} />
+      <Route path={"/shimmer"} element={<Shimmer />} />
 
     </Routes>
 

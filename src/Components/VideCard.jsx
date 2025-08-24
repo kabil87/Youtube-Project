@@ -15,13 +15,20 @@ const VideoCard = ({video}) => {
     <div className="">
      
      <div>
-       <img alt="video" src={thumbnails?.medium?.url} />
+       <img className="rounded-2xl" alt="video" src={thumbnails?.medium?.url} />
      </div>
 
-      <h2>{channelTitle}</h2>
-      <h2 className=" break-words">{title}</h2>
+     <div className="w-83">
+
+      <h2 className="text-white">{channelTitle}</h2>
+      <h2 className=" break-words text-white">{title}</h2>
      
-      <h4 className=" break-words">{statistics.viewCount}Views</h4>
+      <h4 className=" break-words text-white">{statistics ? statistics.viewCount : null}Views</h4>
+
+     </div>
+
+      
+
     </div>
   )
 }
